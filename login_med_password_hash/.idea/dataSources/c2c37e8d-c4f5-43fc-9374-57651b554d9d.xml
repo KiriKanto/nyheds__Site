@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - login@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="login">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bootstrap_cms"/>
+    <schema id="3" name="brugere_og_roller_alexander"/>
+    <schema id="4" name="brugere_og_roller_christina"/>
+    <schema id="5" name="brugere_og_roller_felix"/>
+    <schema id="6" name="brugere_og_roller_malou"/>
+    <schema id="7" name="brugere_og_roller_michael"/>
+    <schema id="8" name="brugere_og_roller_michelle"/>
+    <schema id="9" name="brugere_og_roller_nicklas"/>
+    <schema id="10" name="brugere_og_roller_nikolaj"/>
+    <schema id="11" name="brugere_og_roller_samoon"/>
+    <schema id="12" name="brugere_og_roller_simon"/>
+    <schema id="13" name="brugere_og_roller_tabitha"/>
+    <schema id="14" name="brugere_og_roller_vincent"/>
+    <schema id="15" name="cmk_bil_baad_og_bike"/>
+    <schema id="16" name="cmk_biografportalen"/>
+    <schema id="17" name="cmk_birgers_bolchefabrik"/>
+    <schema id="18" name="cmk_brugere_og_roller"/>
+    <schema id="19" name="cmk_forum_php"/>
+    <schema id="20" name="cmk_hairdresser"/>
+    <schema id="21" name="cmk_hifi_netbutik"/>
+    <schema id="22" name="cmk_landdrup_dans"/>
+    <schema id="23" name="cmk_medielageret"/>
+    <schema id="24" name="cmk_mettes_planteskole"/>
+    <schema id="25" name="cmk_moebler"/>
+    <schema id="26" name="cmk_musicon_magasinet"/>
+    <schema id="27" name="cmk_oop_shopping_cart"/>
+    <schema id="28" name="cmk_photoguru"/>
+    <schema id="29" name="cmk_php_nyhedssite"/>
+    <schema id="30" name="cmk_praktik_3_oevelser"/>
+    <schema id="31" name="cmk_projekt_action"/>
+    <schema id="32" name="cmk_rss_reader_applikation"/>
+    <schema id="33" name="cmk_simpleshop"/>
+    <schema id="34" name="cmk_slipseknuden"/>
+    <schema id="35" name="cmk_sony_site"/>
+    <schema id="36" name="dynamisk_include"/>
+    <schema id="37" name="film_db"/>
+    <schema id="38" name="information_schema"/>
+    <schema id="39" name="kmogs_dk"/>
+    <schema id="40" name="landdrup_dans"/>
+    <schema id="41" name="mysql"/>
+    <schema id="42" name="n1ce_network"/>
+    <schema id="43" name="naldalhus"/>
+    <schema id="44" name="nyhedssite"/>
+    <schema id="45" name="oevelser_jquery_ajax"/>
+    <schema id="46" name="performance_schema"/>
+    <schema id="47" name="phpmyadmin"/>
+    <schema id="48" name="tech_cms"/>
+    <schema id="49" name="template_structure"/>
+    <schema id="50" name="test"/>
+    <schema id="51" name="tinalundchristiansen"/>
+    <schema id="52" name="vestsjaellahds_"/>
+    <schema id="53" name="wi3_brugere_og_roller"/>
+    <table id="54" parent="1" name="brugere"/>
+    <column id="55" parent="54" name="bruger_id">
+      <mandatory>1</mandatory>
+      <data-type>mediumint(8) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="56" parent="54" name="bruger_navn">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="57" parent="54" name="bruger_email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="58" parent="54" name="bruger_adgangskode">
+      <comment>Kun til at huske oprindelig adgangskode</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="59" parent="54" name="bruger_hashed_adgangskode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="60" parent="54" name="bruger_salt">
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <key id="61" parent="54" name="PRIMARY">
+      <columns>bruger_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
